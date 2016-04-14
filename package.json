@@ -1,0 +1,23 @@
+{
+  "name": "magazine",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js": "browserify src/js/app.js -o js/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:yeion7/magazine.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "masonry-layout": "~4.0.0",
+    "jquery": "~2.2.3"
+  },
+  "devDependencies": {
+    "browserify": "~13.0.0"
+  }
+}
