@@ -1,0 +1,51 @@
+.cover
+  display: flex
+  flex-direction: column-reverse
+  justify-content: center;
+  padding: 0 15px
+
+  @media screen and (min-width: 769px)
+    flex-direction: row
+
+  &-left
+    background: $color-primary
+    color: white
+    display: flex
+    flex-direction: column
+    height: 440px
+    justify-content: space-around;
+    padding: 15px
+    width: 100%
+
+  &-date
+    color: $color-text1
+
+  &-title
+    font-size: 2em
+    font-weight: bold
+    width: 80%
+
+  &-text
+    line-height: 1.2em
+    width: 80%
+
+  &-button
+    border: 1px solid white
+    font-weight: bold
+    padding: .5em 2em
+
+  &-icon
+    font-size: 2em
+
+  &-opt
+    display: flex
+    justify-content: space-between
+
+
+  &-right
+    height: 440px
+    width: 100%
+
+  &-img
+    height: 100%
+    width: 100%
