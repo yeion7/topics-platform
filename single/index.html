@@ -7,14 +7,14 @@
     <title>Videoteca</title>
 
     <!-- estilos -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
   </head>
   <body >
     <div class="modal-container hiden" id="modal">
       <div class="modal-box">
         <a class="modal-close" id="modal-close">X</a>
-        <img class="modal-logo" src="./images/logo.png" alt="">
+        <img class="modal-logo" src="../images/logo.png" alt="">
         <div class="modal-content">
 
         <!-- contenido del modal login-->
@@ -68,8 +68,8 @@
 
     <header class="header-container">
       <a href="/">
-        <img class="header-logo" src="./images/logo.png" alt="">
-        <img class="header-logo-responsive" src="./images/logo-responsive.png" alt="">
+        <img class="header-logo" src="../images/logo.png" alt="">
+        <img class="header-logo-responsive" src="../images/logo-responsive.png" alt="">
       </a>
 
       <div class="header-menus">
@@ -108,53 +108,56 @@
     </header>
 
     <div id="app">
-      <section class="cover">
-        <div class="cover-left">
-          <span class="cover-date">28/02/2016</span>
-          <h1 class="cover-title">
-            Rolling Stone in Cuba: See photos and footage from the historic show
+      <section class="hero">
+        <img src="../images/cover.jpg" alt="" class="hero-img">
+        <div class="hero-text">
+          <span class="hero-category">Entretenimiento</span>
+          <span class="hero-date">28/01/2016</span>
+          <h1 class="hero-title">
+            'Batman v Superman': What happend in batman's dream, and what it means for 'Justice Leage'
           </h1>
-          <p class="cover-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit facere omnis itaque odio porro ab neque, quo incidunt a quia.
-          </p>
-          <div class="cover-opt">
-            <a href="#" class="cover-button">Leer</a>
-            <div class="cover-social">
-              <i class="icon-social-facebook cover-icon"></i>
-              <i class="icon-social-twitter cover-icon"></i>
+        </div>
+
+      </section>
+
+      <div class="single-comments">
+          <div class="single-comments-order">
+            <h3 class="single-comments-title">Comentarios</h3>
+            <div>
+              <a href="#" class="single-comments-ultimos">Últimos</a>
+              <a href="#" class="single-comments-populares">Populares</a>
             </div>
           </div>
 
-        </div>
-        <div class="cover-right">
-          <img src="./images/cover.jpg" alt="cover" class="cover-img">
-        </div>
-      </section>
+          <div class="single-comments-write">
+            <img src="../images/cover.jpg" alt="" class="single-comments-avatar">
+            <form action="" class="single-comments-form">
+              <textarea name="name" rows="8" cols="40" class="single-comments-input" placeholder="Comenta"></textarea>
+            </form>
+          </div>
 
-      <section class="options">
-        <form action="" class="options-form">
-          <span class="options-text">Suscripción</span>
-          <input type="text" class="options-input" placeholder="CORREO">
-          <button type="sutmit" class="options-button">
-            <i class="icon-next"></i>
-          </button>
-        </form>
-        <div class="options-order">
-          <a href="#" class="options-select active">Más comentados</a>
-          <a href="#" class="options-select">Últimos</a>
-          <a href="#" class="options-select">Populares</a>
-        </div>
+          <div class="single-comments-comment">
+            <div class="single-comments-top">
+              <img src="../images/cover.jpg" alt="" class="single-comments-avatar-small">
+              <span class="single-comments-user">Scientifantastic</span>
+              <span class="single-comments-time">Hace 1 dia</span>
+            </div>
+            <p class="single-comments-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut fuga minus iusto provident sapiente sed velit distinctio ipsam. Doloremque magnam sint, possimus placeat praesentium rem explicabo laborum cupiditate delectus.
+            </p>
+          </div>
 
-      </section>
-
-      <section class="articles grid">
-
-        <div class="grid-item">...</div>
-        <div class="grid-item grid-item--width2">...</div>
-        <div class="grid-item">...</div>
-
-      </section>
-
+          <div class="single-comments-comment">
+            <div class="single-comments-top">
+              <img src="../images/cover.jpg" alt="" class="single-comments-avatar-small">
+              <span class="single-comments-user">Scientifantastic</span>
+              <span class="single-comments-time">Hace 1 dia</span>
+            </div>
+            <p class="single-comments-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut fuga minus iusto provident sapiente sed velit distinctio ipsam. Doloremque magnam sint, possimus placeat praesentium rem explicabo laborum cupiditate delectus.
+            </p>
+          </div>
+      </div>
     </div>
 
 
@@ -178,6 +181,6 @@
       </div>
     </footer>
 
-  <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
   </body>
 </html>

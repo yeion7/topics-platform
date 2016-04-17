@@ -41,3 +41,11 @@ modalButton.addEventListener('click', function (ev) {
   ev.preventDefault();
   toggleClass(modalContainer, 'hiden');
 });
+
+const $grid = $('.grid');
+
+$grid.masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200,
+});

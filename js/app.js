@@ -12149,4 +12149,12 @@ modalButton.addEventListener('click', function (ev) {
   toggleClass(modalContainer, 'hiden');
 });
 
+const $grid = $('.grid');
+
+$grid.masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200,
+});
+
 },{"jquery":1,"masonry-layout":2}]},{},[9]);
