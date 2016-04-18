@@ -156,6 +156,11 @@ a {
   cursor: pointer;
   padding: 0.1em;
 }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 body {
   background: #f4f4f4;
   color: #323232;
@@ -931,6 +936,156 @@ body {
 }
 .description-link {
   color: #dc2028;
+}
+.perfil {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 769px) {
+  .perfil {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.perfil-img {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background: #eee;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.perfil-avatar {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.perfil-sobre {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background: #fff;
+  padding: 15px;
+}
+.perfil-section {
+  background: #333;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-right: 5px;
+  padding: 0.3em;
+  text-transform: uppercase;
+}
+.perfil-editar {
+  color: #dc2028;
+  cursor: pointer;
+  font-size: 0.6em;
+  font-weight: bold;
+}
+.perfil-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+.perfil-text {
+  color: #666;
+  line-height: 1.2em;
+}
+.perfil-info {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  padding: 15px;
+  width: 100%;
+}
+.perfil-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+}
+.perfil-left,
+.perfil-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.2em;
+}
+.perfil-left {
+  margin-right: 30px;
+}
+.perfil-label {
+  font-weight: bold;
+}
+.perfil-gustos {
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+}
+.perfil-selects {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0 40px 0;
+  line-height: 1.2em;
+}
+.perfil-selects div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 15px;
+}
+.perfil-selects label {
+  font-weight: bold;
+}
+.perfil-cerrar {
+  border: 1px solid #dc2028;
+  color: #dc2028;
+  font-weight: bold;
+  padding: 0.5em;
+}
+.perfil-cerrar:hover {
+  background: #dc2028;
+  color: #fff;
 }
 .terminos-container {
   width: 100%;
