@@ -1141,6 +1141,10 @@ body {
           align-items: center;
   padding: 5px 15px;
   background: #333;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+  width: 100%;
 }
 .footer-left,
 .footer-right {
@@ -1167,4 +1171,78 @@ body {
 }
 .footer-terminos {
   text-align: right;
+}
+.articulos {
+  height: 400px;
+  padding: 0 15px;
+  width: 100%;
+}
+.grid {
+  max-width: 100%;
+}
+.grid:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.grid-sizer,
+.grid-item {
+  background: #dc2028;
+  width: 20%;
+}
+.grid-item {
+  float: left;
+  height: 200px;
+  border-bottom: 7px solid #dc2028;
+  color: #333;
+}
+.grid-item--height2 {
+  color: #dc2028;
+  height: 300px;
+}
+.grid-item--height3 {
+  color: #dc2028;
+  height: 380px;
+}
+.grid-item-img {
+  width: 100%;
+  height: 100%;
+}
+.grid-item-content {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 15px;
+  position: absolute;
+}
+.grid-item-text {
+  color: #fff;
+  font-size: 1.5em;
+}
+.grid-item-date {
+  color: inherit;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.grid-item-button {
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 10px;
+  padding: 0.4em;
 }

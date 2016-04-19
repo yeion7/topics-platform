@@ -1,5 +1,5 @@
-const $ = require('jquery');
-const masonry = require('masonry-layout');
+// const $ = require('jquery');
+// const Masonry = require('masonry-layout');
 
 // desplegar menu mobile
 var navMenu = document.getElementById('nav-menu');
@@ -42,10 +42,10 @@ modalButton.addEventListener('click', function (ev) {
   toggleClass(modalContainer, 'hiden');
 });
 
-const $grid = $('.grid');
+var elem = document.querySelector('.grid');
 
-$grid.masonry({
-  // options
+var msnry = new Masonry(elem, {
   itemSelector: '.grid-item',
-  columnWidth: 200,
+  columnWidth: '.grid-sizer',
+  percentPosition: true,
 });
