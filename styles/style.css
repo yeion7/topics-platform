@@ -164,12 +164,9 @@ a {
 body {
   background: #f4f4f4;
   color: #323232;
-  font-family: sans-serif;
+  font-family: 'open sans';
   font-size: 16px;
   position: relative;
-}
-.hiden {
-  display: none;
 }
 .header-container {
   height: 76px;
@@ -292,6 +289,15 @@ body {
             align-items: center;
     position: static;
   }
+}
+.header-social {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  color: #fff;
+  font-size: 1.3em;
+  padding: 0.3em;
+  margin: 0.5em;
 }
 .nav-list {
   display: -webkit-box;
@@ -1245,4 +1251,7 @@ body {
   color: #fff;
   margin-top: 10px;
   padding: 0.4em;
+}
+.hiden {
+  display: none;
 }

@@ -13,6 +13,8 @@ mobileMenu.addEventListener('click', function (ev) {
 // desplegar barra de busqueda
 var searchButton = document.getElementById('search-button');
 var searchInput = document.getElementById('search-input');
+var headerFacebook = document.getElementById('header-facebook');
+var headerTwitter = document.getElementById('header-twitter');
 
 searchButton.addEventListener('click', function (ev) {
   ev.preventDefault();
@@ -20,6 +22,8 @@ searchButton.addEventListener('click', function (ev) {
   mobileMenu.classList.toggle('hiden');
   navMenu.classList.toggle('hiden');
   signinButton.classList.toggle('hiden');
+  headerFacebook.classList.toggle('hiden');
+  headerTwitter.classList.toggle('hiden');
 });
 
 //desplegar modal
