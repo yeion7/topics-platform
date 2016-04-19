@@ -197,7 +197,7 @@ body {
   width: auto;
   height: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1249px) {
   .header-logo {
     display: none;
   }
@@ -206,7 +206,7 @@ body {
   width: 60px;
   height: auto;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1250px) {
   .header-logo-responsive {
     display: none;
   }
@@ -1185,6 +1185,7 @@ body {
 }
 .grid {
   max-width: 100%;
+  overflow: hidden;
 }
 .grid:after {
   clear: both;
@@ -1197,18 +1198,18 @@ body {
   width: 20%;
 }
 .grid-item {
-  float: left;
-  height: 200px;
   border-bottom: 7px solid #dc2028;
   color: #333;
+  float: left;
+  height: 150px;
 }
 .grid-item--height2 {
   color: #dc2028;
-  height: 300px;
+  height: 200px;
 }
 .grid-item--height3 {
   color: #dc2028;
-  height: 380px;
+  height: 260px;
 }
 .grid-item-img {
   width: 100%;
@@ -1224,6 +1225,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  font-size: 0.5em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1236,10 +1238,20 @@ body {
           justify-content: flex-end;
   padding: 15px;
   position: absolute;
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .grid-item-content {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid-item-content {
+    font-size: 1em;
+  }
 }
 .grid-item-text {
   color: #fff;
-  font-size: 1.5em;
 }
 .grid-item-date {
   color: inherit;
@@ -1249,8 +1261,20 @@ body {
 .grid-item-button {
   border: 1px solid #fff;
   color: #fff;
-  margin-top: 10px;
-  padding: 0.4em;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 0;
 }
 .hiden {
   display: none;
