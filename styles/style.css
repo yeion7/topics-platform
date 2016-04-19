@@ -1133,6 +1133,12 @@ body {
   color: #777;
 }
 .footer-container {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #333;
+  bottom: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1141,16 +1147,9 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 5px 15px;
-  background: #333;
-  position: fixed;
-  bottom: 0px;
-  z-index: 1000;
   width: 100%;
+  z-index: 1000;
 }
 .footer-left,
 .footer-right {
@@ -1179,13 +1178,11 @@ body {
   text-align: right;
 }
 .articulos {
-  height: 400px;
   padding: 0 15px;
   width: 100%;
 }
 .grid {
   max-width: 100%;
-  overflow: hidden;
 }
 .grid:after {
   clear: both;
