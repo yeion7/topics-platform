@@ -1,6 +1,7 @@
 .options
   display: flex
   flex-direction: column
+  justify-content: space-between;
   padding: 0 15px
 
   @media screen and (min-width: 769px)
@@ -39,11 +40,12 @@
 
   &-order
     align-items: center
-    display: flex
     justify-content: space-between;
     width: 100%
+    display: none
 
     @media screen and (min-width: 769px)
+      display: flex
       width: 50%
       justify-content: flex-end
 
@@ -72,6 +74,16 @@
   &-section
     background: #ddd
     padding-right: 2em
+
+  &-responsive
+    background: white
+    border: 0
+    color: inherit
+    font-size: inherit
+    padding: 1em
+
+    @media screen and (min-width: 769px)
+      display: none
 
 .active
   background: $color-primary

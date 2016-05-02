@@ -1,9 +1,24 @@
+.left
+  width: 100%
+
+.right
+  width: 80%
+  @media screen and (min-width: 1025px)
+    width: 60%
+
 .single
+  &-sections
+    align-items: center
+    display: flex
+    flex-direction: column
+    margin-top: 15px
+
+    @media screen and (min-width: 769px)
+      align-items: stretch
+      flex-direction: row
+
   &-comments
     padding: 15px
-    width: 90%
-    @media screen and (min-width: 769px)
-      width: 60%
 
     &-order
       display: flex
@@ -26,7 +41,6 @@
       &:active
         background:$color-primary
         color: white
-
 
     &-write
       align-items: center
@@ -78,14 +92,54 @@
     &-text
       padding-left: 50px
 
+  &-videos
+    display: flex
+    margin: 0 15px
+    flex-direction: column
+
+    &-section
+      font-size: 1.5em
+      font-weight: bold
+      margin: 15px 0
+
+      @media screen and (min-width: 769px)
+        margin-bottom: 15px
+        margin-top: 0
+
+
+    &-video
+      background: white
+      display: flex
+      height: 130px
+      margin: 10px 0
+      width: 100%
+
+    &-img
+      width: 40%
+      height: 100%
+
+    &-info
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px
+
+    &-title
+      font-weight: bold;
+      font-size: 1em
+      line-height: 1.2em
+
+    &-time
+      color $color-primary
+      font-weight: bold;
+      font-size: .9em
+
 
 .hero
   border-bottom: 10px solid $color-primary
-  max-height: 60vh
+  max-height: 70vh
   overflow: hidden
   position: relative
-  width: 100%
-
 
   &-img
     width: 100%
@@ -115,8 +169,10 @@
     font-weight: bold
 
   &-title
-    font-size: 1.7em
+    font-size: 1.3em
     font-weight: bold
+    @media screen and (min-width: 769px)
+      font-size: 1.7em
 
 .social
   align-items: center
@@ -124,6 +180,8 @@
   display: flex
   justify-content: space-between;
   height: 50px
+  padding-right: 5px
+  width: 100%
 
   &-text
   &-vistas
@@ -140,15 +198,14 @@
 
   &-icon
     color: white
-    font-size: 1.2em
+    font-size: 1em
     margin-left: 5px
     padding: .4em
+    @media screen and (min-width: 769px)
+      font-size: 1.3em
 
 .description
   padding: 15px
-  width: 90%
-  @media screen and (min-width: 769px)
-    width: 60%
 
   &-title
     font-weight: bold
