@@ -935,7 +935,7 @@ body {
   width: 40%;
   height: 100%;
 }
-.single-videos-info {
+.single-videos-content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -951,14 +951,15 @@ body {
   padding: 10px;
 }
 .single-videos-title {
-  font-weight: bold;
   font-size: 1em;
+  font-weight: bold;
   line-height: 1.2em;
 }
-.single-videos-time {
-  color: #dc2028;
-  font-weight: bold;
-  font-size: 0.9em;
+.single-videos-category {
+  padding: 0.3em 0.5em;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
 }
 .hero {
   border-bottom: 10px solid #dc2028;
